@@ -5,6 +5,9 @@ from their Salesforce book and Apollo's company signals, written by Claude,
 and delivered in Slack. Nothing is written back to Salesforce until the rep
 approves it.
 
+**Demo video (4:53):** [docs/demo.mp4](docs/demo.mp4) ·
+**One pager:** [docs/one-pager.pdf](docs/one-pager.pdf)
+
 ```
 Your plan for Thursday, Nov 12
 Urgent: Twilio, Asana, Box, GitLab · Meetings today: GitLab at 2:00 PM · Start with: Twilio, Asana, Box
@@ -189,6 +192,9 @@ makes those writes.
 
 ## Write up and demo
 
+- [`docs/demo.mp4`](docs/demo.mp4): the demo, 4:53. A rep runs `/plan` in
+  Slack, reviews the plan, applies writes and opens the record in Salesforce;
+  then the design, trust, scope and hardening, narrated.
 - `docs/one-pager.pdf`: what it is, why it matters, how it works, and the
   discussion questions on one page.
 - `docs/demo-script.md`: the five minute walk through.
