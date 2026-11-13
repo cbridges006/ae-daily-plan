@@ -5,7 +5,7 @@ from their Salesforce book and Apollo's company signals, written by Claude,
 and delivered in Slack. Nothing is written back to Salesforce until the rep
 approves it.
 
-**Demo video (4:53):** [docs/demo.mp4](docs/demo.mp4) ·
+**Demo video (4:53):** [watch](https://docs.google.com/videos/d/1Gi5TsCLuMv6RjN8M336nr1VM0pU2z4VSAY5hhRlxKMg/play?usp=sharing) or [download](docs/demo.mp4) ·
 **One pager:** [docs/one-pager.pdf](docs/one-pager.pdf)
 
 ```
@@ -192,7 +192,7 @@ makes those writes.
 
 ## Write up and demo
 
-- [`docs/demo.mp4`](docs/demo.mp4): the demo, 4:53. A rep runs `/plan` in
+- [The demo](https://docs.google.com/videos/d/1Gi5TsCLuMv6RjN8M336nr1VM0pU2z4VSAY5hhRlxKMg/play?usp=sharing), 4:53 (also [`docs/demo.mp4`](docs/demo.mp4)). A rep runs `/plan` in
   Slack, reviews the plan, applies writes and opens the record in Salesforce;
   then the design, trust, scope and hardening, narrated.
 - `docs/one-pager.pdf`: what it is, why it matters, how it works, and the
