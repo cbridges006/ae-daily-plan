@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Apollo_Id__c</fullName>
+    <label>Apollo Id</label>
+    <description>The Apollo person id, so a person found there is never added twice.</description>
+    <externalId>true</externalId>
+    <length>64</length>
+    <required>false</required>
+    <unique>false</unique>
+    <type>Text</type>
+</CustomField>

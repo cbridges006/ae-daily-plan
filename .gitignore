@@ -1,0 +1,8 @@
+node_modules/
+# Holds names, emails and the token map from real runs.
+out/
+.env
+.sf/
+.sfdx/
+.DS_Store
+.claude/settings.local.json

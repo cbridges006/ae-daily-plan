@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AE Daily Plan slides</title>
+<!-- The closing slides of the demo video. Each renders alone at 1802 by 1080 (the recording's size):
+     open slides.html#1 through #5. -->
+<style>
+  :root {
+    --ink: #14181d; --soft: #515a66; --line: #d9dee5; --paper: #ffffff; --wash: #f4f6f8;
+    --code: #1f6f4a; --code-bg: #e7f4ec; --model: #8a4b08; --model-bg: #fdf0dc;
+    --person: #2b4fa3; --person-bg: #e6ecfa; --apollo: #5b3fa3; --apollo-bg: #efeafb; --warn: #a3312b; --warn-bg: #fbe9e7;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .slide { display: none; width: 1802px; height: 1080px; padding: 80px 110px; flex-direction: column; }
+  .slide.on { display: flex; }
+  .kicker { font-size: 22px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--soft); font-weight: 700; }
+  h1 { font-size: 64px; line-height: 1.1; margin: 14px 0 44px; }
+  .lead { font-size: 30px; line-height: 1.4; color: var(--soft); margin: -20px 0 48px; max-width: 1400px; }
+  .cols { display: grid; gap: 36px; align-items: start; }
+  .c3 { grid-template-columns: repeat(3, 1fr); }
+  .c2 { grid-template-columns: 1fr 1fr; }
+  .box { border-radius: 14px; padding: 36px 38px; background: var(--wash); border-top: 8px solid var(--ink); }
+  .box h2 { font-size: 34px; margin: 0 0 16px; line-height: 1.2; }
+  .box p, .box li { font-size: 26px; line-height: 1.45; color: #2a313a; margin: 0 0 10px; }
+  .box ul { margin: 0; padding-left: 28px; }
+  .g { background: var(--code-bg); border-color: var(--code); }
+  .p { background: var(--apollo-bg); border-color: var(--apollo); }
+  .o { background: var(--model-bg); border-color: var(--model); }
+  .b { background: var(--person-bg); border-color: var(--person); }
+  .r { background: var(--warn-bg); border-color: var(--warn); }
+  .flow { display: flex; gap: 14px; align-items: stretch; margin-bottom: 40px; }
+  .step { flex: 1; border-radius: 12px; padding: 18px 18px; border-left: 8px solid; font-size: 22px; line-height: 1.3; }
+  .step b { display: block; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+  .step.g b { color: var(--code); } .step.p b { color: var(--apollo); } .step.o b { color: var(--model); } .step.b b { color: var(--person); }
+  pre { margin: 0; font: 22px/1.5 ui-monospace, Menlo, monospace; white-space: pre-wrap; color: #2a313a; }
+  .tok { background: #fff3b0; border-radius: 4px; padding: 0 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 27px; line-height: 1.35; }
+  th { text-align: left; font-size: 20px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--soft); padding: 0 24px 14px 0; border-bottom: 3px solid var(--ink); }
+  td { padding: 20px 24px 20px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td:first-child { font-weight: 700; width: 25%; }
+  .foot { margin-top: auto; padding-top: 24px; font-size: 22px; color: var(--soft); border-top: 2px solid var(--line); display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+
+<section class="slide" id="s1">
+  <div class="kicker">Why it matters</div>
+  <h1>What it changes for the team</h1>
+  <p class="lead">The rules for who to call are already in an enablement doc. Nobody applies them to a whole book before 9:00, every morning, the same way. This does.</p>
+  <div class="cols c3">
+    <div class="box b"><h2>The first hour goes to calls</h2><p>One ranked plan in Slack instead of five systems and a judgment call.</p><p>Deals waiting on the rep always come first.</p></div>
+    <div class="box p"><h2>Every touch stands on a fact</h2><p>"Hiring a Director, Sales Strategy &amp; Operations, posted Oct 30" instead of "just checking in."</p><p>Dated, sourced, checkable by the rep.</p></div>
+    <div class="box g"><h2>The CRM gets better daily</h2><p>Readiness scores with their reasons, a task for each next step.</p><p>Written only when the rep says yes, so it is trusted.</p></div>
+  </div>
+  <div class="foot"><span>AE Daily Plan · an Agent Skill</span><span>Salesforce · Apollo · Claude · Slack</span></div>
+</section>
+
+<section class="slide" id="s2">
+  <div class="kicker">Design</div>
+  <h1>Who decides what</h1>
+  <div class="flow">
+    <div class="step b"><b>Rep</b>/plan in Slack</div>
+    <div class="step g"><b>Code</b>Read the book from Salesforce</div>
+    <div class="step p"><b>Apollo</b>Company data, jobs, news</div>
+    <div class="step g"><b>Code</b>Rank, readiness, safe contacts</div>
+    <div class="step o"><b>Claude</b>Openers, next steps, emails</div>
+    <div class="step g"><b>Code</b>Check every email</div>
+    <div class="step b"><b>Rep</b>Tick, Apply</div>
+  </div>
+  <div class="cols c2">
+    <div class="box g">
+      <h2>Skill, script or MCP? Each does its part</h2>
+      <ul>
+        <li><b>APIs</b> fetch facts. Apollo's MCP server is wired in for people search, which this Apollo plan refused.</li>
+        <li><b>Code</b> decides order, readiness, contacts and what may be shown: a rule in a prompt is a request, in code it is a guarantee.</li>
+        <li><b>Claude</b> writes the words. <b>The skill file</b> says when, in what order, and what never to do.</li>
+      </ul>
+    </div>
+    <div class="box o">
+      <h2>What the model sees</h2>
+<pre>KEY 001jV00000L2UZ0QAN
+Account: PagerDuty · Reengage
+Why now: quiet 64 days since a deal lost Jun 16
+Contact: <span class="tok">[[P6]]</span>, Director, Sales Operations
+Facts:
+- Lost deal "PagerDuty: forecasting", Jun 16
+- Apollo hiring: "Director, Sales Strategy
+  &amp; Operations", posted Oct 30</pre>
+      <p style="margin-top:14px">Dated facts, labeled by source. Names are tokens; the model never sees them.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s3">
+  <div class="kicker">Trust</div>
+  <h1>Where AI helped, and where I did not trust it</h1>
+  <p class="lead">Claude Code wrote most of the code and tests under my review. Real runs caught what the tests did not.</p>
+  <table>
+    <tr><th>Not trusted</th><th>What happened</th><th>Now</th></tr>
+    <tr><td>Claude's emails</td><td>An email had a five word subject against a limit of four</td><td>A checker in code drops it; the card says why</td></tr>
+    <tr><td>The AI written checker</td><td>Read "Thanks for reviewing..." as a sign off and dropped a good email</td><td>A test that failed first, then the fix</td></tr>
+    <tr><td>Apollo's data</td><td>Off topic and bad news tied to accounts (a security flaw, an investigation)</td><td>Headlines must name the company; no email may pitch on bad news</td></tr>
+    <tr><td>The background run</td><td>Reached for a Python one liner to patch an email</td><td>Refused: three scripts and one file, never a Salesforce write</td></tr>
+    <tr><td>The tests</td><td>A test that cannot fail is worse than none</td><td>Rules broken on purpose; the suite went red each time</td></tr>
+  </table>
+</section>
+
+<section class="slide" id="s4">
+  <div class="kicker">Scope</div>
+  <h1>What I assumed, and what I left out</h1>
+  <div class="cols c2">
+    <div class="box b">
+      <h2>Assumptions</h2>
+      <ul>
+        <li>Each system's own permissions are the right scope, so everything runs as the rep.</li>
+        <li>RevOps owns the ICP, in a file anyone can read and change without code.</li>
+        <li>Calls and tickets live in Salesforce: Gong as a mirrored object, Cases as the support desk.</li>
+        <li>A rep forgives a gap they can see: a source that fails says "Not checked."</li>
+      </ul>
+    </div>
+    <div class="box r">
+      <h2>Left out on purpose</h2>
+      <ul>
+        <li>Sending email or drafts</li>
+        <li>Any write without approval</li>
+        <li>A stored copy of CRM data</li>
+        <li>A model score for ranking</li>
+        <li>Mobile numbers</li>
+        <li>A hosted server: Socket Mode needs none</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s5">
+  <div class="kicker">Production</div>
+  <h1>Before reps depend on it</h1>
+  <table>
+    <tr><th>Today</th><th>In production</th></tr>
+    <tr><td>Names as tokens</td><td>Tokenized at the model boundary in code, which the model cannot route around</td></tr>
+    <tr><td>One Salesforce login</td><td>Each Slack user mapped to their own Salesforce user, so reads and writes run as that rep</td></tr>
+    <tr><td>A listener on a laptop</td><td>An always on host, a scheduled plan per rep, and a ledger of every run and every skip</td></tr>
+    <tr><td>Rules proven by tests</td><td>An eval set built from reps' verdicts on real plans</td></tr>
+    <tr><td>No outcome measured</td><td>Replies and meetings booked against a holdout, before any claim of time saved</td></tr>
+  </table>
+  <div class="foot"><span>Code, tests, one pager: github.com/cbridges006/ae-daily-plan</span><span>Colby Bridges</span></div>
+</section>
+
+<script>
+  const n = Number(location.hash.slice(1)) || 1;
+  document.getElementById(`s${n}`).classList.add("on");
+</script>
+</body>
+</html>

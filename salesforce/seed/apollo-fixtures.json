@@ -1,0 +1,189 @@
+{
+  "_note": "INVENTED VALUES, in the shape of Apollo's API responses, so the plan runs end to end with no API key. They say nothing true about these companies and the people, roles and headlines do not exist. A live run ignores this file and uses Apollo's real answers.",
+  "organizations": {
+    "amplitude.com": {
+      "id": "fix-org-amplitude",
+      "name": "Amplitude",
+      "estimated_num_employees": 740,
+      "industry": "computer software",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": 0.12,
+      "latest_funding_round_date": "{{months_ago:7}}",
+      "latest_funding_stage": "Series F"
+    },
+    "smartsheet.com": {
+      "id": "fix-org-smartsheet",
+      "name": "Smartsheet",
+      "estimated_num_employees": 3300,
+      "industry": "computer software",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": 0.03
+    },
+    "okta.com": {
+      "id": "fix-org-okta",
+      "name": "Okta",
+      "estimated_num_employees": 5900,
+      "industry": "computer software",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": 0.01
+    },
+    "twilio.com": {
+      "id": "fix-org-twilio",
+      "name": "Twilio",
+      "estimated_num_employees": 5600,
+      "industry": "information technology & services",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": 0.06
+    },
+    "asana.com": {
+      "id": "fix-org-asana",
+      "name": "Asana",
+      "estimated_num_employees": 1800,
+      "industry": "information technology & services",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": 0.0
+    },
+    "gitlab.com": {
+      "id": "fix-org-gitlab",
+      "name": "GitLab",
+      "estimated_num_employees": 2100,
+      "industry": "computer software",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": 0.04
+    },
+    "braze.com": {
+      "id": "fix-org-braze",
+      "name": "Braze",
+      "estimated_num_employees": 2000,
+      "industry": "computer software",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": 0.09
+    },
+    "pagerduty.com": {
+      "id": "fix-org-pagerduty",
+      "name": "PagerDuty",
+      "estimated_num_employees": 1200,
+      "industry": "computer software",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": -0.03
+    },
+    "box.com": {
+      "id": "fix-org-box",
+      "name": "Box",
+      "estimated_num_employees": 2700,
+      "industry": "computer software",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": 0.02
+    },
+    "docusign.com": {
+      "id": "fix-org-docusign",
+      "name": "DocuSign",
+      "estimated_num_employees": 6800,
+      "industry": "computer software",
+      "country": "United States",
+      "organization_headcount_twelve_month_growth": -0.02
+    }
+  },
+  "people": {
+    "braze.com": [
+      {
+        "id": "fix-person-1",
+        "first_name": "Avery",
+        "last_name": "Stone",
+        "title": "VP, Revenue Operations",
+        "seniority": "vp",
+        "email": "email_not_unlocked@domain.com"
+      },
+      {
+        "id": "fix-person-2",
+        "first_name": "Jordan",
+        "last_name": "Vale",
+        "title": "Director of Sales Operations",
+        "seniority": "director",
+        "email": "email_not_unlocked@domain.com"
+      },
+      {
+        "id": "fix-person-3",
+        "first_name": "Casey",
+        "last_name": "Lund",
+        "title": "Software Engineer",
+        "seniority": "entry"
+      }
+    ],
+    "smartsheet.com": [
+      {
+        "id": "fix-person-4",
+        "first_name": "Noor",
+        "last_name": "Haddad",
+        "title": "VP Revenue Operations",
+        "seniority": "vp"
+      },
+      {
+        "id": "fix-person-5",
+        "first_name": "Riley",
+        "last_name": "Marsh",
+        "title": "Senior Manager, Sales Operations",
+        "seniority": "manager"
+      }
+    ]
+  },
+  "jobs": {
+    "braze.com": [
+      {
+        "title": "Sales Operations Systems and Data Lead Chicago",
+        "posted_at": "{{days_ago:20}}",
+        "url": null,
+        "city": "Chicago"
+      },
+      {
+        "title": "Sales Operations Systems and Data Lead New York City",
+        "posted_at": "{{days_ago:20}}"
+      },
+      {
+        "title": "Senior Director, GTM Product Marketing",
+        "posted_at": "{{days_ago:21}}"
+      },
+      {
+        "title": "Account Executive, Mid Market",
+        "posted_at": "{{days_ago:6}}"
+      },
+      {
+        "title": "Sales Development Representative",
+        "posted_at": "{{days_ago:9}}"
+      }
+    ],
+    "amplitude.com": [
+      {
+        "title": "Enterprise Account Executive",
+        "posted_at": "{{days_ago:4}}"
+      },
+      {
+        "title": "Account Executive, Growth",
+        "posted_at": "{{days_ago:11}}"
+      },
+      {
+        "title": "Sales Development Representative",
+        "posted_at": "{{days_ago:15}}"
+      },
+      {
+        "title": "Sales Manager, West",
+        "posted_at": "{{days_ago:30}}"
+      }
+    ],
+    "gitlab.com": [
+      {
+        "title": "Senior Manager, Revenue Operations",
+        "posted_at": "{{days_ago:12}}"
+      }
+    ]
+  },
+  "news": {
+    "gitlab.com": [
+      {
+        "title": "Example headline: GitLab announces new fiscal year sales leadership",
+        "published_at": "{{days_ago:8}}",
+        "domain": "news.example"
+      }
+    ]
+  }
+}

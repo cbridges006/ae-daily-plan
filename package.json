@@ -1,0 +1,24 @@
+{
+  "name": "ae-daily-plan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An Agent Skill that builds an account executive's daily plan from Salesforce and Apollo, writes it with Claude, and delivers it in Slack.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test \".claude/skills/ae-daily-plan/scripts/**/*.test.ts\" \"salesforce/**/*.test.ts\" \"bot/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "demo": "node .claude/skills/ae-daily-plan/scripts/gather.ts --fixtures",
+    "bot": "node bot/listen.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

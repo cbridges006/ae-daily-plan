@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Readiness_Reasons__c</fullName>
+    <label>Readiness Reasons</label>
+    <description>The facts the readiness letter was scored on, written with it.</description>
+    <length>2000</length>
+    <visibleLines>3</visibleLines>
+    <type>LongTextArea</type>
+</CustomField>

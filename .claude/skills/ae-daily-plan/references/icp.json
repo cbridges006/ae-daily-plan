@@ -1,0 +1,54 @@
+{
+  "seller": "Northbeam",
+  "sells": "revenue operations software: forecasting and territory planning for B2B sales teams",
+  "employees": {
+    "min": 200,
+    "max": 5000
+  },
+  "industries": [
+    "computer software",
+    "information technology",
+    "internet",
+    "software"
+  ],
+  "countries": [
+    "United States",
+    "Canada",
+    "United Kingdom"
+  ],
+  "buyerTitles": [
+    "revenue operations",
+    "revops",
+    "sales operations",
+    "sales ops",
+    "chief revenue",
+    "sales strategy",
+    "gtm operations",
+    "go to market operations"
+  ],
+  "buyerSeniorities": [
+    "c_suite",
+    "vp",
+    "head",
+    "director",
+    "manager"
+  ],
+  "signals": {
+    "growth12mAtLeast": 0.1,
+    "fundedWithinMonths": 12,
+    "hiringWithinDays": 60,
+    "salesRolesAtLeast": 3,
+    "newsWithinDays": 60
+  },
+  "salesRoleTitles": [
+    "account executive",
+    "sales development",
+    "business development",
+    "sales manager",
+    "head of sales",
+    "vp sales",
+    "vp, sales",
+    "vice president of sales",
+    "sales director"
+  ]
+}

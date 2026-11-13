@@ -1,0 +1,27 @@
+This is A E Daily Plan, an Agent Skill. A rep asks for today's plan in Slack.
+
+Behind that slash command, a small listener on my laptop holds a Socket Mode connection to Slack, so there's no server to host. It starts Claude Code in the background, on the same skill a rep could run in a Claude Code window. Scripts read the rep's book from Salesforce, then Apollo's company data, job postings and news for every account in play. Claude writes, code checks every email, and the plan posts. The checklist follows the agent's real tool calls, not a timer.
+
+About forty seconds later the plan arrives: one briefing with what's urgent, today's meeting, where to start, and what couldn't be checked, like Apollo news this key can't read.
+
+Code ranks the book. It's a sort, not a score: overdue deal work first, then stale next steps, today's meetings, and outbound last. Twilio leads because a pricing task has been overdue since November ninth. Asana's next step hasn't moved in twenty one days. Every fact on a card is dated and labeled with its source.
+
+Box has a high priority support case open, so code holds the pitch email. The rep calls about the case first.
+
+GitLab is a meeting today, so its card adds discovery questions and likely objections. Every card links to its record in Salesforce, read live as the rep. Nothing is copied out.
+
+Apollo earns its place here. PagerDuty lost a deal in June, and Apollo shows a new sales strategy director posting. Time to reopen it.
+
+Okta is left out: Apollo shows it's too big, in the wrong industry. Then the proposed writes. Nothing touches Salesforce until the rep ticks one and presses Apply.
+
+Only the person who asked for the plan can apply it. Each write must pass an allow list of objects and fields, and is logged with its value before and after. The result links straight to the record. Here's the task on GitLab, due today, with the plan's reason in its comments.
+
+The rules for who to call already live in enablement docs, but nobody applies them to a whole book before nine A M, every morning, the same way. This does. The first hour goes to calls instead of tabs. Every outbound touch stands on a dated, checkable fact. And the CRM gets better each day, with readiness scores and their reasons, and a task for every next step, because the rep only says yes.
+
+Why a skill, and not a script or an M C P call? Each part does what it's best at. Apollo's API fetches facts. Its M C P server is wired in for people search, which this Apollo plan refused. Code decides order, readiness, who's safe to contact, and whether an email may be shown, because a rule in a prompt is a request, and in code it's a guarantee. Claude writes only the words, from dated facts labeled by source, with names swapped for tokens.
+
+Claude Code wrote most of this under my review. Real runs caught what tests didn't. The checker dropped Claude's own email for a five word subject, and once misread "thanks for reviewing" as a sign off, so a test covers that. Apollo tied bad news to accounts, so no email may pitch on it. Run from Slack, Claude may call three scripts and nothing else, and it can never write to Salesforce. I broke rules on purpose to watch each test fail.
+
+I assumed each system's own permissions are the right scope, so everything runs as the rep. That RevOps owns the ideal customer profile, in a file anyone can read. And that calls and tickets live in Salesforce, so Gong is a mirrored object, and Cases stand in for the support desk. I left out sending email, any write without approval, stored copies of CRM data, and a model score for ranking.
+
+To harden it: tokenize names at the model boundary, in code. Map each Slack user to their own Salesforce login, so reads and writes run as that rep. Run the listener on an always on host, with a scheduled plan per rep and a ledger of every run. Build evals from reps' verdicts on real plans. And measure replies and meetings booked against a holdout, before claiming any time saved.

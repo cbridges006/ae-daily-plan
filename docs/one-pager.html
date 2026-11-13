@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AE Daily Plan</title>
+<style>
+  @page { size: letter landscape; margin: 0.35in; }
+  :root {
+    --ink: #14181d; --soft: #515a66; --line: #d9dee5; --paper: #ffffff; --wash: #f4f6f8;
+    --code: #1f6f4a; --code-bg: #e7f4ec; --model: #8a4b08; --model-bg: #fdf0dc;
+    --person: #2b4fa3; --person-bg: #e6ecfa; --apollo: #5b3fa3; --apollo-bg: #efeafb;
+  }
+  * { box-sizing: border-box; }
+  html { background: #e9ecf0; }
+  body { margin: 0 auto; padding: 0.3in; width: 10.3in; background: var(--paper); color: var(--ink); font: 9.7px/1.34 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  @media print { html { background: none; } body { padding: 0; width: auto; } }
+  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--ink); padding-bottom: 7px; }
+  h1 { font-size: 23px; line-height: 1.1; margin: 0; }
+  header p { margin: 3px 0 0; color: var(--soft); font-size: 11.5px; }
+  header .who { text-align: right; font-size: 10.5px; color: var(--soft); }
+  header .who b { color: var(--ink); font-size: 12px; }
+  main { display: grid; grid-template-columns: 1fr 1.08fr 1.32fr; gap: 0.24in; margin-top: 10px; }
+  h2 { font-size: 9.5px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--soft); margin: 0 0 6px; }
+  h3 { font-size: 10.8px; margin: 7px 0 2px; }
+  p { margin: 0 0 5px; }
+  ul { margin: 0 0 6px; padding-left: 14px; }
+  li { margin-bottom: 2px; }
+  .lead { font-size: 11.6px; line-height: 1.32; font-weight: 600; }
+  .card { border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px; background: var(--wash); margin-bottom: 7px; font-size: 9.3px; }
+  .card b.t { display: block; font-size: 10px; margin-bottom: 2px; }
+  .card .ap { color: var(--apollo); }
+  .step { display: grid; grid-template-columns: 54px 1fr; gap: 8px; border-radius: 6px; padding: 4px 8px; margin-bottom: 2px; border-left: 4px solid; }
+  .step b { font-size: 10px; }
+  .step span.k { font-size: 8.4px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding-top: 1px; }
+  .code { background: var(--code-bg); border-color: var(--code); } .code .k { color: var(--code); }
+  .apollo { background: var(--apollo-bg); border-color: var(--apollo); } .apollo .k { color: var(--apollo); }
+  .model { background: var(--model-bg); border-color: var(--model); } .model .k { color: var(--model); }
+  .person { background: var(--person-bg); border-color: var(--person); } .person .k { color: var(--person); }
+  .arrow { text-align: center; color: var(--soft); font-size: 7px; line-height: 1; margin: 0 0 2px; }
+  .key { display: flex; flex-wrap: wrap; gap: 10px; font-size: 9px; color: var(--soft); margin-top: 5px; }
+  .key i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+  .q { border-top: 1px solid var(--line); padding-top: 5px; margin-top: 5px; }
+  .q:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+  .q b.t { font-size: 10.4px; }
+  footer { margin-top: 6px; border-top: 1px solid var(--line); padding-top: 6px; display: grid; grid-template-columns: 1fr 1fr; gap: 0.24in; font-size: 9px; color: var(--soft); }
+  footer b { color: var(--ink); }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>AE Daily Plan</h1>
+    <p>An Agent Skill: one ranked, evidence backed plan per rep each morning, from Salesforce and Apollo signals, written by Claude, delivered in Slack.</p>
+  </div>
+  <div class="who"><b>Colby Bridges</b><br>Senior GTM Systems Engineer exercise · Apollo<br>11/12/2026</div>
+</header>
+
+<main>
+  <section>
+    <h2>The problem, and what it unlocks</h2>
+    <p class="lead">An AE starts the day in five systems deciding who to call, and most outbound goes out with no real reason to call. The rules are known; nobody applies them to a whole book before 9:00.</p>
+    <p>The skill applies them, every morning, the same way:</p>
+    <ul>
+      <li><b>Ranks the book by rule:</b> overdue deal work and next steps older than 14 days first; a deal is never buried under outbound.</li>
+      <li><b>Finds the why now with Apollo:</b> a company posting a sales operations role is building the team that buys; that posting, dated, becomes the reason to call.</li>
+      <li><b>Drafts every touch</b> and holds each email to the written standard before the rep sees it.</li>
+    </ul>
+    <div class="card">
+      <b class="t">A card from the live run</b>
+      <b>Braze · Outbound.</b> Why now: Readiness A, and they are hiring a Sales Operations Systems and Data Lead (posted Oct 23).<br>
+      <span class="ap">Apollo:</span> 2,000 employees, headcount up 13% · 18 open sales roles · Nov 9: named a leader in a Gartner Magic Quadrant<br>
+      Call opener · next step · contact plan · Open in Salesforce
+    </div>
+    <h3>What it unlocks</h3>
+    <ul>
+      <li>The first hour goes to calls, not tabs.</li>
+      <li>Every outbound touch stands on a dated, checkable fact.</li>
+      <li>The CRM improves each morning: fresh readiness with its reasons and a task per next step, because the rep only says yes.</li>
+    </ul>
+    <h3>What I assumed</h3>
+    <ul>
+      <li>Each system's permissions are the right scope, so everything runs as the rep.</li>
+      <li>The ICP (buyer titles, size, signal windows) is RevOps owned, in a file, not code.</li>
+      <li>Calls and tickets live in Salesforce (a Gong object, Cases), as at most companies.</li>
+      <li>Reps forgive a gap they can see: a source that fails reads "Not checked".</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="step person"><span class="k">Rep</span><div><b>Ask.</b> <code>/plan</code> in Slack. The skill runs headless in Claude Code, and progress shows in the channel.</div></div>
+    <div class="arrow">▼</div>
+    <div class="step code"><span class="k">Code</span><div><b>Gate and read.</b> Active user, time zone, then the rep's book from Salesforce: deals, contacts, calls, cases, meetings, tasks.</div></div>
+    <div class="arrow">▼</div>
+    <div class="step apollo"><span class="k">Apollo</span><div><b>Signals.</b> Company data, job postings and news for every account in play, by REST API, cached a day.</div></div>
+    <div class="arrow">▼</div>
+    <div class="step code"><span class="k">Code</span><div><b>Rank and qualify.</b> A sort, not a score. Buyer team hiring, sales hiring and growth feed readiness A, B or C. Opted out and departed contacts never appear.</div></div>
+    <div class="arrow">▼</div>
+    <div class="step model"><span class="k">Claude</span><div><b>Write.</b> Opener, next step, email per account, from labeled facts only. Names are tokens; the model never sees them.</div></div>
+    <div class="arrow">▼</div>
+    <div class="step code"><span class="k">Code</span><div><b>Check.</b> 50 to 125 words, one question, no invented conversation, no pitch on bad news. A failing email is dropped and the card says why.</div></div>
+    <div class="arrow">▼</div>
+    <div class="step code"><span class="k">Code</span><div><b>Deliver.</b> One Slack briefing, the cards in its thread, the proposed writes last.</div></div>
+    <div class="arrow">▼</div>
+    <div class="step person"><span class="k">Rep</span><div><b>Approve.</b> Tick writes, press Apply; only the rep who asked can. Allowed fields only, each logged before and after.</div></div>
+    <div class="key"><span><i style="background:var(--code)"></i>code, tested</span><span><i style="background:var(--apollo)"></i>Apollo</span><span><i style="background:var(--model)"></i>Claude</span><span><i style="background:var(--person)"></i>the rep</span></div>
+    <h3>Systems</h3>
+    <p>Salesforce Developer Edition (read and write), Apollo REST API (bulk enrichment, job postings, news), Claude (the skill's agent, or the API with structured output for an unattended 8:00 run), Slack (Socket Mode, so <code>/plan</code> and buttons need no public server). Runs on a laptop, outbound only. The headless run can call three scripts and nothing else; it can never write to Salesforce.</p>
+  </section>
+
+  <section>
+    <h2>The discussion questions</h2>
+    <div class="q"><b class="t">Why a skill, a script, or a direct MCP call?</b>
+      <p>Each does what it is best at. API calls fetch facts. Code decides order, safety and what may be shown, so every rule is a test. Claude writes. "Rank by these rules" in a prompt is a request; in code it is a guarantee. The skill file on top tells the agent when to run, in what order, and what it must never do. Apollo's MCP is wired in for people search on plans that include it.</p></div>
+    <div class="q"><b class="t">How the data is shaped for the model</b>
+      <p>One block per account: a key, a category, a why now, a contact token, dated facts each labeled with its source. Unattended, the response schema's key is an enum of the plan's account ids, so a missing or invented account is impossible to return silently.</p></div>
+    <div class="q"><b class="t">What I left out on purpose</b>
+      <p>Sending email or drafts. Any write without approval. A stored copy of CRM data. A model score for ranking. Mobile numbers. A hosted server.</p></div>
+    <div class="q"><b class="t">Where AI helped, and where I did not trust it</b>
+      <p>Claude Code wrote most of the code and tests under review. Real runs caught what the suite did not:</p>
+      <ul>
+        <li>Claude's own email had a five word subject against a limit of four: dropped by the checker.</li>
+        <li>The AI written checker was wrong too: it read "Thanks for reviewing..." as a sign off and dropped a good email. Fixed with a test that failed first.</li>
+        <li>Apollo tied off topic and bad news to accounts (a security flaw at GitLab, an investigation at Braze). Headlines must now name the company, and an email built on bad news is dropped.</li>
+        <li>Apollo's docs said its MCP gives people search on any plan; the account refused it. Tested every endpoint instead of trusting the docs.</li>
+        <li>Ten rules broken on purpose; the suite went red each time.</li>
+      </ul></div>
+    <div class="q"><b class="t">What production needs</b>
+      <p>Tokenization enforced at the model boundary, each Slack user mapped to their own Salesforce login so reads and writes run as that rep, the listener on an always on host with a run ledger, an eval set built from reps' verdicts, and the outcome measured: replies and meetings booked against a holdout.</p></div>
+  </section>
+</main>
+
+<footer>
+  <div><b>What already existed.</b> The ranking, contact rules, email checks and lessons come from Precog, an AI agent platform for GTM teams I designed and built, where this runs as the AE daily plan playbook.</div>
+  <div><b>What is new.</b> The skill packaging, Apollo signals in place of Clay, Salesforce as the system of record for calls and cases, <code>/plan</code> and Apply in Slack, the seed book, and all 55 tests.</div>
+</footer>
+</body>
+</html>

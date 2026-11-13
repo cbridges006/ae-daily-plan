@@ -1,0 +1,5 @@
+{
+  "packageDirectories": [{ "path": "salesforce/force-app", "default": true }],
+  "name": "ae-daily-plan",
+  "sourceApiVersion": "62.0"
+}

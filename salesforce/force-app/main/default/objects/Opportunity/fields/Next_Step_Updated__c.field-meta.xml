@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Step_Updated__c</fullName>
+    <label>Next Step Updated</label>
+    <description>The day Next Step last changed. More than 14 days old is stale.</description>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>
